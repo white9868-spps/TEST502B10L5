@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>閩南語第10冊 第5課〈火車〉測驗</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial, sans-serif; background-color: #fdf6e3; padding: 20px; line-height: 1.6; color: #586e75; }
+        .container { max-width: 850px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #b58900; border-bottom: 3px solid #eee8d5; padding-bottom: 10px; }
+        .section { margin-bottom: 35px; background: #fff; padding: 15px; border-radius: 10px; border: 1px solid #eee8d5; }
+        .section-title { font-weight: bold; font-size: 1.25em; color: #cb4b16; margin-bottom: 20px; border-left: 8px solid #cb4b16; padding-left: 15px; }
+        .question { margin-bottom: 20px; padding: 10px; }
+        .question:nth-child(even) { background-color: #fdfcf8; }
+        .score-display { text-align: center; font-size: 1.8em; font-weight: bold; color: #859900; margin-top: 25px; }
+        .lock-message { text-align: center; color: #dc322f; font-weight: bold; padding: 25px; border: 3px dashed #dc322f; border-radius: 10px; display: none; background: #fff5f5; margin-bottom: 20px; }
+        button { display: block; width: 100%; padding: 18px; background: #268bd2; color: white; border: none; border-radius: 10px; font-size: 1.3em; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #2aa198; }
+        button:disabled { background: #93a1a1; cursor: not-allowed; }
+        .ref-box { background: #eee8d5; padding: 12px; margin-bottom: 15px; border-radius: 6px; font-weight: bold; color: #073642; }
+        select { padding: 6px; font-size: 1em; border-radius: 5px; border: 1px solid #93a1a1; }
+        .options-label { margin-right: 15px; cursor: pointer; display: inline-block; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>閩南語第10冊 第5課〈火車〉</h1>
+    
+    <div id="lockMessage" class="lock-message">
+        測驗已完成送出。為了公平起見，20 分鐘內請勿重複測驗。<br>
+        剩餘解鎖時間：<span id="countdown">--:--</span>
+    </div>
+
+    <form id="quizForm">
+        <div class="section">
+            <div class="section-title">一、選擇題 (每題4分)</div>
+            <div class="question">1. 課文中描寫什麼東西像寶石？ <br>
+                <label class="options-label"><input type="radio" name="q1" value="1"> (1)日頭</label>
+                <label class="options-label"><input type="radio" name="q1" value="2"> (2)甘蔗</label>
+                <label class="options-label"><input type="radio" name="q1" value="3"> (3)西瓜</label>
+            </div>
+            <div class="question">2. 課文中描寫火車像什麼？ <br>
+                <label class="options-label"><input type="radio" name="q2" value="1"> (1)磅空</label>
+                <label class="options-label"><input type="radio" name="q2" value="2"> (2)蜈蚣</label>
+                <label class="options-label"><input type="radio" name="q2" value="3"> (3)溪埔</label>
+            </div>
+            <div class="question">3. 火車從高屏溪開到東部的過程中，「沒有」看到下面哪一種東西？ <br>
+                <label class="options-label"><input type="radio" name="q3" value="1"> (1)蜈蚣</label>
+                <label class="options-label"><input type="radio" name="q3" value="2"> (2)樓仔厝</label>
+                <label class="options-label"><input type="radio" name="q3" value="3"> (3)甘蔗園</label>
+            </div>
+            <div class="question">4. 課文：「雄雄，鑽過去□□□的磅空。」 <br>
+                <label class="options-label"><input type="radio" name="q4" value="1"> (1)心內話</label>
+                <label class="options-label"><input type="radio" name="q4" value="2"> (2)歇落來</label>
+                <label class="options-label"><input type="radio" name="q4" value="3"> (3)暗眠摸</label>
+            </div>
+            <div class="question">5. 課文：「藍色的海水一湧一湧，招蜈蚣來□□□」 <br>
+                <label class="options-label"><input type="radio" name="q5" value="1"> (1)覕相揣</label>
+                <label class="options-label"><input type="radio" name="q5" value="2"> (2)心內話</label>
+                <label class="options-label"><input type="radio" name="q5" value="3"> (3)鬥鬧熱</label>
+            </div>
+            <div class="question">6. 課文：「相挨相𤲍的樓仔厝」的意思是： <br>
+                <label class="options-label"><input type="radio" name="q6" value="1"> (1)高高低低的大廈</label>
+                <label class="options-label"><input type="radio" name="q6" value="2"> (2)排列擁擠的樓房</label>
+                <label class="options-label"><input type="radio" name="q6" value="3"> (3)空間狹小的房子</label>
+            </div>
+            <div class="question">7. 「蜈蚣耍甲忝矣！」這句話的意思是： <br>
+                <label class="options-label"><input type="radio" name="q7" value="1"> (1)蜈蚣到處爬！</label>
+                <label class="options-label"><input type="radio" name="q7" value="2"> (2)蜈蚣玩累了！</label>
+                <label class="options-label"><input type="radio" name="q7" value="3"> (3)蜈蚣長大了！</label>
+            </div>
+            <div class="question">8. 「阿舅□過戶橂。」空格應填入哪一個字？ <br>
+                <label class="options-label"><input type="radio" name="q8" value="1"> (1)迒</label>
+                <label class="options-label"><input type="radio" name="q8" value="2"> (2)對</label>
+                <label class="options-label"><input type="radio" name="q8" value="3"> (3)軁</label>
+            </div>
+            <div class="question">9. 「伊□□喝一聲，逐家攏驚一趒。」應填入： <br>
+                <label class="options-label"><input type="radio" name="q9" value="1"> (1)𨑨迌</label>
+                <label class="options-label"><input type="radio" name="q9" value="2"> (2)焦鬆</label>
+                <label class="options-label"><input type="radio" name="q9" value="3"> (3)雄雄</label>
+            </div>
+            <div class="question">10. 下面哪一個是「臺灣東部」的縣市？ <br>
+                <label class="options-label"><input type="radio" name="q10" value="1"> (1)花蓮縣</label>
+                <label class="options-label"><input type="radio" name="q10" value="2"> (2)雲林縣</label>
+                <label class="options-label"><input type="radio" name="q10" value="3"> (3)澎湖縣</label>
+            </div>
+            <div class="question">11. 下面哪一個「不是」臺灣南部的縣市？ <br>
+                <label class="options-label"><input type="radio" name="q11" value="1"> (1)高雄市</label>
+                <label class="options-label"><input type="radio" name="q11" value="2"> (2)屏東縣</label>
+                <label class="options-label"><input type="radio" name="q11" value="3"> (3)南投縣</label>
+            </div>
+            <div class="question">12. 下面哪一個縣市四周「沒有」靠海？ <br>
+                <label class="options-label"><input type="radio" name="q12" value="1"> (1)澎湖縣</label>
+                <label class="options-label"><input type="radio" name="q12" value="2"> (2)嘉義市</label>
+                <label class="options-label"><input type="radio" name="q12" value="3"> (3)臺南市</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">二、縣市拼音配對 (每題4分)</div>
+            <div class="ref-box">
+                A. Hûn-lîm-kuān | B. Ka-gī-tshī | C. Tâi-lâm-tshī<br>
+                D. Hua-liân-kuān | E. Phînn-ôo-kuān | F. Tâi-tang-kuān 
+            </div>
+            <div class="question">
+                1. 雲林縣：<select name="q13"><option value="">選代號</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+                2. 嘉義市：<select name="q14"><option value="">選代號</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+                3. 臺南市：<select name="q15"><option value="">選代號</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+                4. 花蓮縣：<select name="q16"><option value="">選代號</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+                5. 澎湖縣：<select name="q17"><option value="">選代號</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+                6. 臺東縣：<select name="q18"><option value="">選代號</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">三、風景名勝配合題 (每題4分)</div>
+            <div class="ref-box">
+                A.嘉義縣 | B.高雄市 | C.屏東縣 | D.花蓮縣 
+            </div>
+            <div class="question">1. 旗津：<select name="q19"><option value="">選縣市</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></div>
+            <div class="question">2. 阿里山：<select name="q20"><option value="">選縣市</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></div>
+            <div class="question">3. 七星潭：<select name="q21"><option value="">選縣市</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></div>
+            <div class="question">4. 鵝鑾鼻：<select name="q22"><option value="">選縣市</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">四、韻母辨析：括號內韻母相同畫○，不同打╳ (每題4分)</div>
+            <div class="question">1. 字「典」 ／ 三「點」  <br>
+                <label class="options-label"><input type="radio" name="q23" value="O"> ○</label><label class="options-label"><input type="radio" name="q23" value="X"> ╳</label>
+            </div>
+            <div class="question">2. 「夜」市 ／ 火「車」 <br>
+                <label class="options-label"><input type="radio" name="q24" value="O"> ○</label><label class="options-label"><input type="radio" name="q24" value="X"> ╳</label>
+            </div>
+            <div class="question">3. 目「鏡」 ／ 芳「甜」 <br>
+                <label class="options-label"><input type="radio" name="q25" value="O"> ○</label><label class="options-label"><input type="radio" name="q25" value="X"> ╳</label>
+            </div>
+            <div class="question">4. 「鉛」筆 ／ 蚵仔「煎」  <br>
+                <label class="options-label"><input type="radio" name="q26" value="O"> ○</label><label class="options-label"><input type="radio" name="q26" value="X"> ╳</label>
+            </div>
+            <div class="question">5. 電「影」 ／ 偷「聽」  <br>
+                <label class="options-label"><input type="radio" name="q27" value="O"> ○</label><label class="options-label"><input type="radio" name="q27" value="X"> ╳</label>
+            </div>
+            <div class="question">6. 「鹽」埕 ／ 「涼」水  <br>
+                <label class="options-label"><input type="radio" name="q28" value="O"> ○</label><label class="options-label"><input type="radio" name="q28" value="X"> ╳</label>
+            </div>
+            <div class="question">7. 「鹽」埕 ／ 「聲」音  <br>
+                <label class="options-label"><input type="radio" name="q29" value="O"> ○</label><label class="options-label"><input type="radio" name="q29" value="X"> ╳</label>
+            </div>
+            <div class="question">8. 「蜈」蚣 ／ 「甘」蔗  <br>
+                <label class="options-label"><input type="radio" name="q30" value="O"> ○</label><label class="options-label"><input type="radio" name="q30" value="X"> ╳</label>
+            </div>
+        </div>
+
+        <button type="button" id="submitBtn" onclick="submitQuiz()">交卷並統計總分</button>
+    </form>
+
+    <div id="result" class="score-display"></div>
+</div>
+
+<script>
+    const LOCK_TIME = 20; // 鎖定分鐘
+    const KEY = 'minnan_l5_quiz_lock';
+
+    window.onload = function() {
+        checkLock();
+        setInterval(checkLock, 1000);
+    };
+
+    function checkLock() {
+        const timestamp = localStorage.getItem(KEY);
+        if (timestamp) {
+            const now = new Date().getTime();
+            const diff = now - parseInt(timestamp);
+            const remain = (LOCK_TIME * 60 * 1000) - diff;
+
+            if (remain > 0) {
+                document.getElementById('quizForm').style.opacity = "0.3";
+                document.getElementById('submitBtn').disabled = true;
+                document.getElementById('lockMessage').style.display = "block";
+                
+                const m = Math.floor(remain / 60000);
+                const s = Math.floor((remain % 60000) / 1000);
+                document.getElementById('countdown').innerText = `${m}:${s < 10 ? '0' : ''}${s}`;
+            } else {
+                localStorage.removeItem(KEY);
+                location.reload();
+            }
+        }
+    }
+
+    function submitQuiz() {
+        // 正確答案映射 [cite: 6, 7, 8, 9, 10, 11]
+        const ans = {
+            q1: "3", q2: "2", q3: "1", q4: "3", q5: "1", q6: "2", q7: "2", q8: "1", q9: "3", q10: "1", q11: "3", q12: "2",
+            q13: "A", q14: "B", q15: "C", q16: "D", q17: "E", q18: "F",
+            q19: "B", q20: "A", q21: "D", q22: "C",
+            q23: "O", q24: "X", q25: "X", q26: "O", q27: "X", q28: "O", q29: "O", q30: "X"
+        };
+
+        let score = 0;
+        const form = document.getElementById('quizForm');
+        const data = new FormData(form);
+
+        for (let q in ans) {
+            if (data.get(q) === ans[q]) {
+                score += 4;
+            }
+        }
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `您的總分是：${score} / 120 分`;
+        
+        localStorage.setItem(KEY, new Date().getTime().toString());
+        alert(`測驗結束！您的得分為：${score} 分。網頁將鎖定 20 分鐘。`);
+        checkLock();
+    }
+</script>
+
+</body>
+</html>
